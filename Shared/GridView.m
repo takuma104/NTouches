@@ -85,7 +85,7 @@
 }
 
 - (void)updateGrid {
-	[super setNeedsDisplay];
+//	[super setNeedsDisplay];
 //	[gridLayer setNeedsDisplay];
 }
 

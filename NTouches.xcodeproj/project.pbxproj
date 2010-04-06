@@ -23,6 +23,7 @@
 		F1901701116BB3A6002ED641 /* touch.png in Resources */ = {isa = PBXBuildFile; fileRef = F19016FC116BB3A6002ED641 /* touch.png */; };
 		F1901917116BCCBD002ED641 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1901916116BCCBD002ED641 /* QuartzCore.framework */; };
 		F19019C8116BD484002ED641 /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = F19019C7116BD484002ED641 /* GridView.m */; };
+		F19019F1116BD757002ED641 /* icon57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = F19019F0116BD757002ED641 /* icon57x57.png */; };
 		F1AF123E116B85CB0041D976 /* UIView+FadeInOut.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AF123D116B85CB0041D976 /* UIView+FadeInOut.m */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		F1901916116BCCBD002ED641 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F19019C6116BD484002ED641 /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GridView.h; path = Shared/GridView.h; sourceTree = "<group>"; };
 		F19019C7116BD484002ED641 /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GridView.m; path = Shared/GridView.m; sourceTree = "<group>"; };
+		F19019F0116BD757002ED641 /* icon57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57x57.png; sourceTree = "<group>"; };
 		F1AF123C116B85CB0041D976 /* UIView+FadeInOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FadeInOut.h"; path = "Shared/UIView+FadeInOut.h"; sourceTree = "<group>"; };
 		F1AF123D116B85CB0041D976 /* UIView+FadeInOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FadeInOut.m"; path = "Shared/UIView+FadeInOut.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 				F19016F9116BB3A6002ED641 /* Default-Portrait.png */,
 				F19016FA116BB3A6002ED641 /* Default.png */,
 				F19016FB116BB3A6002ED641 /* icon72x72.png */,
+				F19019F0116BD757002ED641 /* icon57x57.png */,
 				F19016FC116BB3A6002ED641 /* touch.png */,
 			);
 			path = resources;
@@ -206,6 +209,7 @@
 				F19016FF116BB3A6002ED641 /* Default.png in Resources */,
 				F1901700116BB3A6002ED641 /* icon72x72.png in Resources */,
 				F1901701116BB3A6002ED641 /* touch.png in Resources */,
+				F19019F1116BD757002ED641 /* icon57x57.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +282,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
 				SDKROOT = iphoneos3.2;
