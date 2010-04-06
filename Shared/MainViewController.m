@@ -1,5 +1,6 @@
 #import "MainViewController.h"
 #import "UIView+FadeInOut.h"
+#import "GridView.h"
 
 @implementation MainViewController
 
@@ -39,6 +40,7 @@
 	}
 	
 	[self updateTouchCount];
+	[(GridView*)self.view updateGrid];
 	
 }
 
@@ -54,8 +56,10 @@
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 	for (UITouch *t in touches) {
 		UIView *v = [self viewForTouch:t];
-		v.center = [t locationInView:self.view];
+		CGPoint pt = [t locationInView:self.view];
+		v.center = pt;
 	}
+	[(GridView*)self.view updateGrid];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -66,6 +70,7 @@
 	}
 
 	[self updateTouchCount];
+	[(GridView*)self.view updateGrid];
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {

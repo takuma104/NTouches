@@ -21,6 +21,8 @@
 		F19016FF116BB3A6002ED641 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F19016FA116BB3A6002ED641 /* Default.png */; };
 		F1901700116BB3A6002ED641 /* icon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = F19016FB116BB3A6002ED641 /* icon72x72.png */; };
 		F1901701116BB3A6002ED641 /* touch.png in Resources */ = {isa = PBXBuildFile; fileRef = F19016FC116BB3A6002ED641 /* touch.png */; };
+		F1901852116BC487002ED641 /* GridView.m in Sources */ = {isa = PBXBuildFile; fileRef = F1901851116BC487002ED641 /* GridView.m */; };
+		F1901917116BCCBD002ED641 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1901916116BCCBD002ED641 /* QuartzCore.framework */; };
 		F1AF123E116B85CB0041D976 /* UIView+FadeInOut.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AF123D116B85CB0041D976 /* UIView+FadeInOut.m */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +47,9 @@
 		F19016FA116BB3A6002ED641 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		F19016FB116BB3A6002ED641 /* icon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72x72.png; sourceTree = "<group>"; };
 		F19016FC116BB3A6002ED641 /* touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touch.png; sourceTree = "<group>"; };
+		F1901850116BC487002ED641 /* GridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridView.h; sourceTree = "<group>"; };
+		F1901851116BC487002ED641 /* GridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridView.m; sourceTree = "<group>"; };
+		F1901916116BCCBD002ED641 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F1AF123C116B85CB0041D976 /* UIView+FadeInOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FadeInOut.h"; path = "Shared/UIView+FadeInOut.h"; sourceTree = "<group>"; };
 		F1AF123D116B85CB0041D976 /* UIView+FadeInOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FadeInOut.m"; path = "Shared/UIView+FadeInOut.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +62,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				F1901917116BCCBD002ED641 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +105,8 @@
 				F110DA49116B7A01004C5C30 /* MainViewController.m */,
 				F1AF123C116B85CB0041D976 /* UIView+FadeInOut.h */,
 				F1AF123D116B85CB0041D976 /* UIView+FadeInOut.m */,
+				F1901850116BC487002ED641 /* GridView.h */,
+				F1901851116BC487002ED641 /* GridView.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -129,6 +137,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1901916116BCCBD002ED641 /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
@@ -212,6 +221,7 @@
 				2860E32E111B888700E27156 /* AppDelegate_Pad.m in Sources */,
 				F110DA4A116B7A01004C5C30 /* MainViewController.m in Sources */,
 				F1AF123E116B85CB0041D976 /* UIView+FadeInOut.m in Sources */,
+				F1901852116BC487002ED641 /* GridView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
