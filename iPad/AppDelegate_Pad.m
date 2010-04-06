@@ -6,7 +6,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
 	[window addSubview:mainViewController.view];
-    [window makeKeyAndVisible];
+	[window makeKeyAndVisible];
 	return YES;
 }
 

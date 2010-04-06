@@ -2,7 +2,7 @@
 
 @interface UIView(FadeInOut)
 
-- (void)fadeIn;
-- (void)fadeOut;
+- (void)fadeInWithDuration:(NSNumber*)duration;
+- (void)fadeOutWithDuration:(NSNumber*)duration;
 
 @end

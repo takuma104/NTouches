@@ -3,7 +3,6 @@
 
 @implementation MainViewController
 
-
 - (void)updateTouchCount {
 	countLabel.text = [NSString stringWithFormat:@"%02d", [activeTouches count]];
 }
@@ -21,7 +20,7 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+    return YES;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -35,7 +34,7 @@
 			UIView *v = [self createTouchViewAt:[t locationInView:self.view]];
 			v.tag = [t hash];
 			[self.view addSubview:v];
-			[v fadeIn];
+			[v fadeInWithDuration:[NSNumber numberWithFloat:0.3f]];
 		}
 	}
 	
@@ -61,7 +60,8 @@
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
 	for (UITouch *t in touches) {
-		[[self viewForTouch:t] fadeOut];
+//		[[self viewForTouch:t] fadeOut];
+		[[self viewForTouch:t] removeFromSuperview];
 		[activeTouches removeObject:t];
 	}
 

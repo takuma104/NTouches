@@ -2,28 +2,24 @@
 
 @implementation UIView(FadeInOut)
 
-- (void)fadeIn {
+- (void)fadeInWithDuration:(NSNumber*)duration {
 	self.alpha = 0.f;
 	[UIView beginAnimations:nil context:NULL];
 	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-	[UIView setAnimationDuration:0.3f];
+	[UIView setAnimationDuration:[duration floatValue]];
 	self.alpha = 1.f;
 	[UIView commitAnimations];
 }
 
-- (void)fadeOut {
-/*	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:0.3f];
+- (void)fadeOutWithDuration:(NSNumber*)duration {
+	float d = [duration floatValue];
+	self.alpha = 1.f;
+	[UIView beginAnimations:nil context:NULL];
+	[UIView setAnimationDuration:d];
 	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-//	[UIView setAnimationDelegate:self];
-//	[UIView setAnimationDidStopSelector:@selector(removeFromSuperview)];
-	self.alpha = 0.f;	
+	self.alpha = 0.f;
 	[UIView commitAnimations];
-	[self performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:0.4f];
-*/
-
-	[self removeFromSuperview];
-//	[self performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:0.4f];
+	[self performSelector:@selector(removeFromSuperview) withObject:nil afterDelay:d + 0.1f];	
 }
 
 @end

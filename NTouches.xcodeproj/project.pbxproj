@@ -16,7 +16,11 @@
 		2860E32F111B888700E27156 /* MainWindow_Pad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2860E32D111B888700E27156 /* MainWindow_Pad.xib */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		F110DA4A116B7A01004C5C30 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F110DA49116B7A01004C5C30 /* MainViewController.m */; };
-		F110DAD6116B8392004C5C30 /* touch.png in Resources */ = {isa = PBXBuildFile; fileRef = F110DAD5116B8392004C5C30 /* touch.png */; };
+		F19016FD116BB3A6002ED641 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = F19016F8116BB3A6002ED641 /* Default-Landscape.png */; };
+		F19016FE116BB3A6002ED641 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = F19016F9116BB3A6002ED641 /* Default-Portrait.png */; };
+		F19016FF116BB3A6002ED641 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F19016FA116BB3A6002ED641 /* Default.png */; };
+		F1901700116BB3A6002ED641 /* icon72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = F19016FB116BB3A6002ED641 /* icon72x72.png */; };
+		F1901701116BB3A6002ED641 /* touch.png in Resources */ = {isa = PBXBuildFile; fileRef = F19016FC116BB3A6002ED641 /* touch.png */; };
 		F1AF123E116B85CB0041D976 /* UIView+FadeInOut.m in Sources */ = {isa = PBXBuildFile; fileRef = F1AF123D116B85CB0041D976 /* UIView+FadeInOut.m */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +40,11 @@
 		8D1107310486CEB800E47090 /* NTouches-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NTouches-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		F110DA48116B7A01004C5C30 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Shared/MainViewController.h; sourceTree = "<group>"; };
 		F110DA49116B7A01004C5C30 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Shared/MainViewController.m; sourceTree = "<group>"; };
-		F110DAD5116B8392004C5C30 /* touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touch.png; sourceTree = "<group>"; };
+		F19016F8116BB3A6002ED641 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		F19016F9116BB3A6002ED641 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		F19016FA116BB3A6002ED641 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F19016FB116BB3A6002ED641 /* icon72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon72x72.png; sourceTree = "<group>"; };
+		F19016FC116BB3A6002ED641 /* touch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = touch.png; sourceTree = "<group>"; };
 		F1AF123C116B85CB0041D976 /* UIView+FadeInOut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+FadeInOut.h"; path = "Shared/UIView+FadeInOut.h"; sourceTree = "<group>"; };
 		F1AF123D116B85CB0041D976 /* UIView+FadeInOut.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+FadeInOut.m"; path = "Shared/UIView+FadeInOut.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +94,6 @@
 		28EEBF621118D79A00187D67 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				F110DAD4116B8392004C5C30 /* resources */,
 				8D1107310486CEB800E47090 /* NTouches-Info.plist */,
 				F110DA48116B7A01004C5C30 /* MainViewController.h */,
 				F110DA49116B7A01004C5C30 /* MainViewController.m */,
@@ -103,6 +110,7 @@
 				2860E324111B887F00E27156 /* iPhone */,
 				28EEBF621118D79A00187D67 /* Shared */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				F19016F7116BB3A6002ED641 /* resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -128,13 +136,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F110DAD4116B8392004C5C30 /* resources */ = {
+		F19016F7116BB3A6002ED641 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				F110DAD5116B8392004C5C30 /* touch.png */,
+				F19016F8116BB3A6002ED641 /* Default-Landscape.png */,
+				F19016F9116BB3A6002ED641 /* Default-Portrait.png */,
+				F19016FA116BB3A6002ED641 /* Default.png */,
+				F19016FB116BB3A6002ED641 /* icon72x72.png */,
+				F19016FC116BB3A6002ED641 /* touch.png */,
 			);
-			name = resources;
-			path = Shared/resources;
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +192,11 @@
 			files = (
 				2860E329111B887F00E27156 /* MainWindow_Phone.xib in Resources */,
 				2860E32F111B888700E27156 /* MainWindow_Pad.xib in Resources */,
-				F110DAD6116B8392004C5C30 /* touch.png in Resources */,
+				F19016FD116BB3A6002ED641 /* Default-Landscape.png in Resources */,
+				F19016FE116BB3A6002ED641 /* Default-Portrait.png in Resources */,
+				F19016FF116BB3A6002ED641 /* Default.png in Resources */,
+				F1901700116BB3A6002ED641 /* icon72x72.png in Resources */,
+				F1901701116BB3A6002ED641 /* touch.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
